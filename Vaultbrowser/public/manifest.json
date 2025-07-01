@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "TabVault - Tab Session Saver",
+  "description": "Save, restore, and manage your browser tab sessions.",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
