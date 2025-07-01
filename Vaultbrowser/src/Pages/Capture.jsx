@@ -8,6 +8,7 @@ export function Capture() {
     newTabs[i][field] = value;
     setTabs(newTabs);
   };
+  // ds
 
   const addTabField = () => setTabs([...tabs, { title: "", url: "" }]);
 
