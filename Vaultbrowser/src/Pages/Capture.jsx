@@ -8,14 +8,14 @@ export function Capture() {
     newTabs[i][field] = value;
     setTabs(newTabs);
   };
-  // ds
-
+  
   const addTabField = () => setTabs([...tabs, { title: "", url: "" }]);
 
   const saveSession = async () => {
     const date = new Date().toISOString().split("T")[0];
     const payload = { title, tabs, notes, date };
-    await fetch("http://localhost:5000/api/sessions", {
+    await fetch("http://localhost:5000/api/sessions",
+       {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),
