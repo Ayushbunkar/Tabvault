@@ -1,4 +1,3 @@
 chrome.runtime.onInstalled.addListener(() => {
-  console.log("TabVault Extension Installed.");
+  console.log("TabVault extension installed.");
 });
-
